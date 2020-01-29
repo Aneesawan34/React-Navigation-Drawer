@@ -20,7 +20,7 @@ export default class Testtwo extends Component {
             () => this.props.navigation.dispatch(DrawerActions.openDrawer())
             // this.props.navigation.toggleDrawer()
           }>
-          <Text>Screen Two</Text>
+          <Text style={{color: '#fff'}}>Screen Two</Text>
         </TouchableOpacity>
       </View>
     );

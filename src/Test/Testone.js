@@ -20,7 +20,7 @@ export default class Testone extends Component {
             () => this.props.navigation.dispatch(DrawerActions.openDrawer())
             // this.props.navigation.toggleDrawer()
           }>
-          <Text>Screen One</Text>
+          <Text style={{color: '#fff'}}>Screen One</Text>
         </TouchableOpacity>
       </View>
     );
