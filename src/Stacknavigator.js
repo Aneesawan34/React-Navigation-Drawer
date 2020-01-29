@@ -18,9 +18,16 @@ const StackNavigator = createStackNavigator(
         headerShown: false,
       }),
     },
+    Drawer: {
+      screen: screens.Drawer,
+      navigationOptions: () => ({
+        headerShown: false,
+      }),
+    },
   },
+
   {
-    initialRouteName: 'Testone',
+    initialRouteName: 'Drawer',
   },
 );
 

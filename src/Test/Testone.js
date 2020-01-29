@@ -1,11 +1,27 @@
 import React, {Component} from 'react';
-import {View, Text} from 'react-native';
+import {View, Text, TouchableOpacity} from 'react-native';
+import {toggleDrawer, DrawerActions} from 'react-navigation-drawer';
 
 export default class Testone extends Component {
   render() {
     return (
-      <View>
-        <Text>Screen One</Text>
+      <View style={{flex: 1, justifyContent: 'center', alignItems: 'center'}}>
+        <TouchableOpacity
+          style={{
+            marginTop: 50,
+            width: 100,
+            height: 50,
+            borderRadius: 10,
+            justifyContent: 'center',
+            alignItems: 'center',
+            backgroundColor: 'red',
+          }}
+          onPress={
+            () => this.props.navigation.dispatch(DrawerActions.openDrawer())
+            // this.props.navigation.toggleDrawer()
+          }>
+          <Text>Screen One</Text>
+        </TouchableOpacity>
       </View>
     );
   }
